@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{width: 100%;
+ background:linear-gradient(rgb(137, 117, 8),rgb(245, 224, 156));
+ font-size: 16px;
+ padding-bottom: 30px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.productimg{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 1px solid;
+}
+#displayproducts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#displayproducts p{
+    padding: 10px 0;
+}
+.addtocart{
+    width: 100px;
+    height: 30px;
+   
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(rgba(58, 62, 71, 0.762),rgba(9, 63, 200, 0.44));
+}
+.shoplink{
+    margin-left: 35px;
+    text-decoration: none;
+    position: relative;
+}
+#cartcount{
+    display: inline-block;
+    background-color: rgb(231, 5, 5);
+    width: 20px;
+    height: 20px;
+    color: white;
+text-align: center;  
+border-radius: 50%;
+font-size: 13px;
+position: absolute;
+left: 14px;
+bottom: 10px;
+}
+.shoplink svg{
+    color: rgba(0, 0, 0, 0.743);
+    font-size: 20px;
+}
+.productstitle{
+    margin-right:35px;
+}

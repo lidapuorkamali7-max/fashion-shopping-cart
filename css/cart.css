@@ -1,0 +1,164 @@
+body {
+    background-color: lightgray;
+    padding: 20px 0;
+}
+
+#shoppingcart {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.leftside {
+    width: 80%;
+    margin-right: 20px;
+    position: relative;
+}
+
+.addedproduct {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.cartimage {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+#cartlayout {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 7px 7px 10px 10px rgb(163, 161, 161);
+    min-height: 90vh;
+}
+
+#ordersummary {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    background-color: gray;
+    border-radius: 0 8px 8px 0;
+}
+
+#ordersummary>* {
+    width: 70%;
+
+    margin: 10px auto;
+
+
+}
+
+#ordersummary h2 {
+    border-bottom: 1px solid rgb(10, 10, 10);
+    padding-bottom: 20px;
+}
+
+.shoppingheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 8px auto;
+
+    border-bottom: 1px solid gray;
+}
+
+button {
+    background-color: rgb(64, 63, 63);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.summarytop {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+.backlink {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+
+}
+
+.productbottom {
+    display: flex;
+}
+
+.removebtn {
+    margin-left: 10px;
+
+}
+
+.linkdiv {
+    position: absolute;
+    background-color: rgb(5, 107, 107);
+    width: 100%;
+}
+
+@media (max-width:838px) {
+    .addedproduct {
+        flex-direction: column;
+
+
+    }
+
+    .cartimage {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media (max-width:538px) {
+
+    .shoppingheader h2,
+    #ordersummary h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:400px) {
+    #cartlayout {
+        flex-direction: column;
+    }
+
+    .leftside {
+        margin: 0 auto;
+    }
+
+    #ordersummary {
+        width: 100%;
+        border-radius: 0;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:324px) {
+    .productbottom {
+        flex-direction: column;
+    }
+
+    .removebtn {
+        width: 70px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}

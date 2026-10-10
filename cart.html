@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+
+    <div id="cartlayout">
+        <div class="leftside">
+            <div class="shoppingheader">
+                <h2>shopping cart</h2>
+                <div id="shoppingcount"></div>
+            </div>
+            <div id="shoppingcart">
+            </div>
+         <div class="linkdiv">  <a href="./index.html" class="backlink">
+            <i class="fas fa-arrow-left"></i>
+            back to shop
+
+           </a></div>
+        </div>
+
+        <div id="ordersummary">
+            <h2> Summary</h2>
+            <div class="summarytop">
+                <p id="summaryitems">items</p>
+                <p id="summarryprice"></p>
+            </div>
+           <label for="">shipping :</label>
+            <select name="" id="myselect">
+                <option value="standard-delivery-$5">standard-delivery-$5</option>
+                <option value="higher-order-delivery-$10">higher-order-delivery-$10</option>
+                <option value="recieved-pay-$0">recieved-pay-$0</option>
+            </select>
+            <label for="">discount:</label>
+            <input type="text" id="coupon" placeholder="Coupon code">
+
+            <button id="applycoupon">Apply Code</button>
+            <p id="couponmessage"></p>
+
+            <button id="checkout">Checkout</button>
+            <div id="totalprice"></div>
+            <button id="clear">clear cart</button>
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>
